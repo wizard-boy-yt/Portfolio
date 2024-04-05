@@ -1,0 +1,204 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #000000;
+	font-family: "raleway", sans-serif;
+}
+
+#bg-hex {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+.light {
+	--size: 100px;
+	display: none;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-75%, -50%);
+	width: var(--size);
+	height: var(--size);
+	border-radius: 100%;
+	box-shadow: 0 0 10px 10px #000;
+	filter: blur(20px);
+}
+
+.hexagon {
+	position: relative;
+	width: 100px;
+	height: 110px;
+	background: #111;
+	margin: 2px;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	pointer-events: none;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.row {
+	display: inline-flex;
+	margin-top: -30px;
+	margin-left: -50px;
+}
+
+.row:nth-child(even) {
+	margin-left: 1px;
+}
+
+
+
+
+
+
+/* for the logo name */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+ html {
+	 width: 100%;
+	 height: 100%;
+}
+ .body {
+	
+	 margin: 0;
+	 width: 100%;
+	 height: 100%;
+	 font-family: 'Raleway', sans-serif;
+}
+ .container {
+	 position: static;
+	 -webkit-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);
+	
+}
+ .title {
+	 font-weight: 700;
+	 color: transparent;
+	 font-size: 40px;
+	 background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+	 background-position: 83% 40%;
+	 -webkit-background-clip: text;
+	 position: fixed;
+	 text-align: center;
+	 line-height: 70px;
+	 letter-spacing: 1px;
+	 left: 50%;
+	
+}
+ .subtitle {
+	color: aliceblue;
+	 display: block;
+	 position: fixed;
+	 text-align: center;
+	 text-transform: uppercase;
+	 left: 50%;
+	 top: 55px;
+}
+
+/* botton */
+
+.raise:hover, .raise:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+.raise {
+	--color: #fe3a3a;
+	--hover: #ffffff;
+	z-index: 1;
+	position: relative;
+
+}
+.raise2:hover, .raise2:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+.raise2 {
+		--color: #6aff6a;
+		--hover: #ffffff;
+		position: relative;
+		
+}
+
+.raise3:hover, .raise3:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+.raise3 {
+		--color: #a585ff;
+		--hover: #ffffff;
+		position: relative;
+		
+}
+.raise4:hover, .raise4:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+.raise4 {
+		--color: #00fbff;
+		--hover: #ffffff;
+		position: relative;
+		
+}
+
+
+
+
+button {
+	color: var(--color);
+	transition: 0.5s;
+	top: -3px;
+	left: 700px;
+}
+button:hover, button:focus {
+	border-color: var(--hover);
+	color: #fff;
+}
+button {
+	background: none;
+	border: 6px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+}
+h1 {
+	font-weight: 400;
+}
+
+
+
+/* for the logo */
+
+.logo{
+	z-index: 1;
+	position: relative;
+	height: 10px;
+    left: 1900px;
+	
+}
