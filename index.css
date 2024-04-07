@@ -128,7 +128,7 @@ body {
 	transform: translateY(-0.25em);
 }
 .raise {
-	--color: #fe3a3a;
+	--color: #ff9898;
 	--hover: #ffffff;
 	z-index: 1;
 	position: relative;
@@ -139,7 +139,7 @@ body {
 	transform: translateY(-0.25em);
 }
 .raise2 {
-		--color: #6aff6a;
+		--color: #b7ffb7;
 		--hover: #ffffff;
 		position: relative;
 		
@@ -150,7 +150,7 @@ body {
 	transform: translateY(-0.25em);
 }
 .raise3 {
-		--color: #a585ff;
+		--color: #cfbeff;
 		--hover: #ffffff;
 		position: relative;
 		
@@ -160,7 +160,7 @@ body {
 	transform: translateY(-0.25em);
 }
 .raise4 {
-		--color: #00fbff;
+		--color: #c7feff;
 		--hover: #ffffff;
 		position: relative;
 		
