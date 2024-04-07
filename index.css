@@ -73,7 +73,12 @@ body {
 }
 
 
-
+* {
+	margin: 0;
+	padding: 0;
+	block-size: border-box;
+	font-family: 'open Sans', sans-serif;
+}
 
 
 
@@ -123,23 +128,82 @@ body {
 
 /* botton */
 
+button {
+	color: var(--color);
+	transition: 0.5s;
+	
+}
+button:hover, button:focus {
+	border-color: var(--hover);
+	color: #fff;
+}
+button {
+	background: none;
+	border: 3px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+}
+
 .raise:hover, .raise:focus {
 	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
 	transform: translateY(-0.25em);
 }
 .raise {
-	--color: #ff9898;
+	--color: #b64d4d;
 	--hover: #ffffff;
 	z-index: 1;
 	position: relative;
-
 }
+
+
 .raise2:hover, .raise2:focus {
 	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
 	transform: translateY(-0.25em);
 }
+li {
+	list-style: none;
+}
+
+header{
+	position: relative;
+	padding: 0 2rem ;
+}
+
+.navbar{
+	width: 100px;
+	height: 60px;
+	min-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .toggle_btn {
+	color: cyan;
+	font-style: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+.action_btn{
+	background-color: transparent;
+	color: green;
+	padding: o.5rem 1rem;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	cursor:  pointer;
+	transition: scale 0.2 ease;
+
+}
+
 .raise2 {
-		--color: #b7ffb7;
+		--color: #59a159;
 		--hover: #ffffff;
 		position: relative;
 		
@@ -150,7 +214,7 @@ body {
 	transform: translateY(-0.25em);
 }
 .raise3 {
-		--color: #cfbeff;
+		--color: #6d5aa3;
 		--hover: #ffffff;
 		position: relative;
 		
@@ -160,7 +224,7 @@ body {
 	transform: translateY(-0.25em);
 }
 .raise4 {
-		--color: #c7feff;
+		--color: #57a4a5;
 		--hover: #ffffff;
 		position: relative;
 		
@@ -169,27 +233,7 @@ body {
 
 
 
-button {
-	color: var(--color);
-	transition: 0.5s;
-	top: -3px;
-	left: 700px;
-}
-button:hover, button:focus {
-	border-color: var(--hover);
-	color: #fff;
-}
-button {
-	background: none;
-	border: 6px solid;
-	font: inherit;
-	line-height: 1;
-	margin: 0.5em;
-	padding: 1em 2em;
-}
-h1 {
-	font-weight: 400;
-}
+
 
 
 
