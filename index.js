@@ -106,3 +106,19 @@ function startInterval() {
 		}
 	}, 1000/ positionSpeed);
 }
+
+
+
+
+
+
+// home button to reload the page
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var home = document.getElementById("home");
+
+    home.addEventListener("click", function() {
+        window.location.reload();
+    });
+});
