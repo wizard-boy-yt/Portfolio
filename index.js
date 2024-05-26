@@ -1,8 +1,8 @@
-let delay = 0; // Screensaver time.
-let positionSpeed = 0.5; // speed of position change.
-let colorSpeed = 0.1; // speed of color change
-let amount = 50; // precentage of light objects derivited of window width.
-let size = 30; // size of light objects.
+let delay = 1; // Screensaver time.
+let positionSpeed = 1; // speed of position change.
+let colorSpeed =0.2; // speed of color change
+let amount = 40; // precentage of light objects derivited of window width.
+let size = 20; // size of light objects.
 let style = 1;
 
 window.onload = function () {
@@ -16,10 +16,8 @@ window.onload = function () {
 
 	for (let a = 0; a < amount; a++) {
 		bg.innerHTML += `<div id="light${a}" class="light"></div>`;
-		css += `
-      #light${a} {
-        background: hsl(${parseInt((360 / amount) * a)}, 100%, 52%);
-        ${a == 0 ? "display: block;width: 200px;height: 200px;" : ""}}`;
+		css += `#light${a} {background: hsl(${parseInt((360 / amount) * a)}, 100%, 52%);
+        ${a == 0 ? "display: block;width: 100px;height: 100px;" : ""}}`;
 	}
 
 	css += `.light {--size: ${window.innerWidth / size}px;}`;
